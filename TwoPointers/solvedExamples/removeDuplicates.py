@@ -1,8 +1,9 @@
-
 '''
-
-why use? 2 pointers method is for finding unique in sorted list that has duplicates and we use 2 pointers coz its the fastest?
-this wont work for finding the duplicates because we do not store them anywhere or else the num[fast-1] part would not work
+Goal: find the number of unique elements in a sorted list that contains duplicates (so the duplicates are right next to each other)
+logic: We loop through with one pointer finding the first occurence of each number (aka unique value) and once we find it, we make it equal to the pointer slow is standing and increment. Slow will be keeping track of the unique elements only moving forward whenever its replaced.
+why use? 
+- sorted array
+- 2 pointers where 1 moves fast (finding unique values) and the other moves slow (keeps track of new orgaanized list) this only works because we are NOT swapping but simply replacing the value of slow and the fast[n-1] is the same and can be accurately compared. 
 '''
 def removeDuplicates(nums):
     
@@ -13,6 +14,6 @@ def removeDuplicates(nums):
             slow += 1
     return slow
 
-nums = [0, 0, 1, 1, 1, 2, 2, 3, 4, 4]
+nums = [1, 2, 2, 2, 3, 4, 4]
 removeDuplicates(nums)
 print(nums)
