@@ -3,5 +3,10 @@
 input =  "banana"
 #output = dictionary with character counts
 
+dictionary = {}
+
 for x in input:
-    print(x)
+    if x not in dictionary:
+        dictionary[x] = 1
+    else:
+        dictionary[x] += 1
