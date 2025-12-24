@@ -10,10 +10,8 @@ return an array of the squares of each number sorted in non-decreasing order.
 
 '''
 
-nums = [-4,-1,0,3,10]
+nums = [-5,-3,-2,-1]
 
-#nums = [16, 1, 0, 9, 100] 
-# Output: [0,1,9,16,100]
 
 front = 0
 back = len(nums) - 1
@@ -33,4 +31,6 @@ while front < back:
     
     back = back - 1
 
+nums[front] =  nums[front] * nums[front]
 print(nums)
+l;fsdjglkdfjglkdfjgfd
