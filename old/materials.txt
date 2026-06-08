@@ -1,0 +1,13 @@
+Materials to try: 
+ - TOF camera
+    1. Chinese camera 
+    2. DepthVista camera
+    - different textures, different colors, different Materials
+
+- Application program for Chinese camera
+- Application program for DepthVista camera
+
+
+- Goal: 
+- Talk about what I did:
+- what this means? 

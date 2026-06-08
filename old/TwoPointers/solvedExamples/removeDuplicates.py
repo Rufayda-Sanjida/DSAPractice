@@ -17,3 +17,23 @@ def removeDuplicates(nums):
 nums = [1, 2, 2, 2, 3, 4, 4]
 removeDuplicates(nums)
 print(nums)
+
+
+# [1, 2, 2, 2, 3, 4, 4]
+# slow = (starts at second index) 2
+# fast = starts at second index = 2 
+# We compare fast with fast [n-1] *******
+#IF DIFFERENT THEN WE SWAP! if same we dont switch 
+#  swap? only time we increase the slow else ALWAYS fast is incrementing!
+
+#1. (iteration) slow = 2 and fast = 2 and fast-1 = 1 (index 3)
+    #swap since fast and fast-1 are different!
+    # except makes no difference since both fast = slow in the beginning
+    #slow++
+
+#2. (2nd iteration) slow = 2 and fast = 2 and fast-1 = 2 (index 3)
+    #no swap
+
+#3 (3rd iteration) slow = 2 and fast = 3 and fast-1 = 2 (index 4)
+    # 
+    #understand by this point that we simply check the number previous to fast to see if its unique and if its unique not matching the previous then we can add it but we leave it alone if its the same since we dont swap but

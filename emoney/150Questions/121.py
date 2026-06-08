@@ -1,5 +1,30 @@
 # # 121. Best Time to Buy and Sell Stock
 
+
+# may 29
+
+
+prices = [7,1,5,3,6,4]
+# smallest day to buy and everyday lets see if i can see. keep track of lowest
+
+lowest = 0
+maxProfit = 0
+
+
+for x in range(0, len(prices)):
+    if prices[lowest] > prices[x]:
+        prices[lowest] = prices[x]
+    
+    profit = prices[x]- prices[lowest]
+    if profit > maxProfit:
+        maxProfit = profit
+
+
+
+
+
+
+
 # prices = [7,1,5,3,6,4]
 
 # '''
@@ -68,6 +93,13 @@
 # print(cheapest)
 # print(largestProfit)
 # # cheapest price seen so fat
+
+
+
+
+
+
+
 
 
 def maxProfit(prices):

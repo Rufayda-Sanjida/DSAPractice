@@ -9,6 +9,8 @@ must be stored directly in nums1.
 
 '''
 
+# COULD NOT SOLVE THIS PROBLEM!
+
 nums1 = [1, 3, 5, 0, 0, 0]
 nums2 = [2, 4, 6]
 
@@ -32,5 +34,11 @@ while pointer1 >= 0 and pointer2 >= 0:
         pointer2 = pointer2 - 1
     
     handler = handler - 1
+
+## missing partttt : 
+while pointer2 >= 0:
+    nums1[handler] = nums2[pointer2]
+    pointer2 -= 1
+    handler -= 1
 
 print(nums1)
